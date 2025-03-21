@@ -1,4 +1,3 @@
-// server/routes/api/chat.post.ts
 import { defineEventHandler, readBody, createError } from 'h3' 
 import { z } from 'zod' 
 import axios from 'axios' 
@@ -12,7 +11,8 @@ const chatRequestSchema = z.object({
   model: z.string().optional().default('google/gemini-2.0-pro-exp-02-05:free')
 }) 
 
-export default defineEventHandler(async (event) => {
+// server/routes/api/chat.post.ts
+export default defineEventHandler(async (event) => {  
   try {
     const config = useRuntimeConfig()     
     const body = await readBody(event) 

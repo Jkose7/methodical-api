@@ -16,9 +16,10 @@ export default defineNitroConfig({
     '/api/**': {
       cors: true,
       headers: {
-        'Access-Control-Allow-Methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
-        'Access-Control-Allow-Headers': 'Content-Type,Authorization'
+        'Access-Control-Allow-Origin': process.env.APP_URL,
+        'Access-Control-Allow-Methods': 'GET, HEAD,POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization'
       }
     }
-  }
+  },
 });
