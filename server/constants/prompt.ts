@@ -20,7 +20,7 @@ PART 1: JSON Data Block containing a valid JSON array of task objects with these
 - category (string: "Work", "Personal", "Study", "Other")
 - estimatedHours (numeric)
 
-PART 2: Add to the JSON Array your explanaition explanation section where you: (text-only)
+PART 2: Add to the JSON Array your explanaition explanation section where you: (text-only dont mention the JSON format)
 - Explain your organization principles (priority assignments, dependencies, etc.) 
 - Highlight any patterns or bottlenecks you identified
 - Provide 1-2 practical tips for effectively managing these specific tasks
